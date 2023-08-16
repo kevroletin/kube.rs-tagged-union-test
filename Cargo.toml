@@ -1,0 +1,15 @@
+[package]
+name = "internally-tagged-enum"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+k8s-openapi = { version = "0.19.0", features = ["v1_25", "schemars"] }
+kube = { version = "0.85.0", features = ["runtime", "client", "derive"] }
+kube-derive = "0.85.0"
+schemars = "0.8.12"
+serde = { version = "1.0.183", features = ["derive"] }
+serde_json = "1.0.105"
+serde_yaml = "0.9.25"
